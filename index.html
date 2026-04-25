@@ -8,39 +8,42 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-</a>
-    <style>
-        /* Background */
-        body {
-            background-color: hsl(336, 100%, 95%);
-            /* light pink */
-       
 
+    <style>
+        body {
+            background-color: #fff0f5;
         }
 
-        /* Navbar */
         .navbar {
             background-color: #ffffff;
         }
 
-        /* Brand */
         .navbar-brand {
-            color: #ff66b2 !important;
+            color: #ff4da6 !important;
             font-weight: bold;
         }
 
-        /* Links */
         .nav-link {
-            color: #3366cc !important;
+            color: #ff66b2 !important;
         }
 
-        /* Buttons */
-        .icon-btn {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
+        .btn-outline-primary {
+            border-color: #ff66b2;
+            color: #ff66b2;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #ff66b2;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #ff66b2;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #e0559c;
         }
 
         .img-fluid {
@@ -48,12 +51,19 @@
             height: 350px;
         }
 
-        .my-container {
-            max-width: 1200px;
-
+        .container {
+            background-color: #ffe6f0 !important;
         }
 
-        /* Login Card */
+        h3, h4, h5 {
+            color: #cc2e75;
+        }
+
+        .card {
+            border-radius: 15px;
+            border: none;
+        }
+
         .login-box {
             max-width: 400px;
             margin: auto;
@@ -61,339 +71,202 @@
             background: #fff;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Title */
-        .login-title {
-            color: #ff66b2;
-            font-weight: bold;
+        .accessory-item {
             text-align: center;
+            margin-bottom: 20px;
         }
 
-        /* Button */
-        .login-btn {
-            background-color: #3366cc;
-            color: white;
-            border-radius: 25px;
+        .accessory-img-wrapper {
+            width: 150px;
+            height: 150px;
+            background-color: #fff0f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            transition: 0.3s;
         }
 
-        .login-btn:hover {
-            background-color: #254a99;
+        .accessory-img-wrapper:hover {
+            transform: scale(1.05);
         }
-        /* Styling for the circular accessory icons */
-.accessory-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.accessory-img-wrapper {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
+        .accessory-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #cc2e75;
+        }
 
-.accessory-img-wrapper:hover {
-    transform: scale(1.05);
-}
+        .section-footer-title {
+            color: #cc2e75;
+            font-size: 2rem;
+            font-weight: bold;
+        }
 
-.accessory-img-wrapper img {
-    max-width: 80%;
-    height: auto;
-}
-
-.accessory-title {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: #2c3e50;
-}
-
-.section-footer-title {
-    color: #2c3e50;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 30px;
-}
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-}
-.whatsapp-float:hover {
-    background-color: #128C7E;
-    color: white;
-}
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+<!-- WhatsApp Button -->
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
-            <a class="navbar-brand" href="#">𝓚𝓘𝓓𝓢 𝓒𝓐𝓡𝓔</a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <a class="navbar-brand" href="#">𝓚𝓘𝓓𝓢 𝓒𝓐𝓡𝓔</a>
 
-            <div class="collapse navbar-collapse" id="nav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#New">New Arrivals</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Accessories">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Size">Size Chart</a></li>
+            </ul>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Login">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#New Arrivals">New Arrivals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Accesseries">Accesseries</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Size Chart">Size Chart</a></li>
-
-                </ul>
-
-                <div class="d-flex ms-3">
-
-                    <button class="btn btn-outline-primary me-2">
-                        <i class="bi bi-search"></i>
-                    </button>
-
-                    <button class="btn btn-outline-primary">
-                        <i class="bi bi-cart"></i>
-                    </button>
-
-                </div>
-
+            <div class="d-flex ms-3">
+                <button class="btn btn-outline-primary me-2">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i>
+                </button>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-
-    <!-- home page -->
-    <div class="container-fluid text-dark " style="background-color: hsl(0, 6%, 94%);">
-        <div class="row">
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <div>
-                    <p class="mt-2 fs-2 fw-dark">Adorable outfits</p>
-                    <h3 class="mb-2"><b>Beautiful Moments</b></h3>
-                    <h3 class="mb-2 fw-dark"> Trendy dresses & Accesseries for </h3>
-                    <h4 class="mb-2 fw-dark">Newborn to 5 year Kids</h4>
-                    <button class="btn btn-outline-primary rounded-pill mt-1 fs-4 p-3 ">SHOP NOW</button>
-                </div>
+<!-- HOME -->
+<div class="container-fluid" style="background-color:#ffe6f0;">
+    <div class="row">
+        <div class="col-6 d-flex align-items-center justify-content-center">
+            <div>
+                <p class="fs-2">Adorable outfits</p>
+                <h3><b>Beautiful Moments</b></h3>
+                <h4>Trendy dresses & Accessories</h4>
+                <h5>Newborn to 5 year Kids</h5>
+                <button class="btn btn-primary rounded-pill mt-3 px-4">SHOP NOW</button>
             </div>
+        </div>
 
-
-
-            <div class="col d-flex justify-content-end">
-                <img src="homepage.png" class="img-fluid" alt="kids image">
-            </div>
-
+        <div class="col d-flex justify-content-end">
+            <img src="homepage.png" class="img-fluid">
         </div>
     </div>
+</div>
 
-    <!-- login page -->
-    <div class="container border border-2 shadow mt-4" id="Login" style="background-color:#cac4c6;">
-        <h3 class=" text-center mt-3 mb-3" style="background-color: #f8d7da;"><strong>LOGIN PAGE</strong></h3>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control">
-                <div class="form-text text-dark">We'll never share your email with anyone else.</div>
-            </div>
+<!-- LOGIN -->
+<div class="container mt-4 p-4" id="Login">
+    <h3 class="text-center">LOGIN</h3>
+    <form>
+        <input type="email" class="form-control mb-2" placeholder="Email">
+        <input type="password" class="form-control mb-2" placeholder="Password">
+        <button class="btn btn-primary w-100">Login</button>
+    </form>
+</div>
 
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-    <!-- new arrivals -->
-    <div class="container border border-2 shadow mt-4" id="New Arrivals" style="background-color:#cac4c6;">
-        <h3 class=" text-center mt-3 mb-3" style="background-color: #f8d7da;"><strong>NEW ARRIVALS</strong></h3>
-        <div class="row mb-5">
-            <div class="col-4">
-                <div class="card" style="width: 22rem;">
-                    <img src="newborn1.jpg" class="card-img-top" alt="..." style="height:350px">
-                    <div class="card-body mx-auto text-center">
-                        <h5 class="card-title">Newborn</h5>
-                        <a href="#" class="btn btn-primary">explore</a>
-                    </div>
+<!-- NEW ARRIVALS -->
+<div class="container mt-4 p-4" id="New">
+    <h3 class="text-center">NEW ARRIVALS</h3>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <img src="newborn1.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Newborn</h5>
+                    <button class="btn btn-primary">Explore</button>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card" style="width: 22rem;">
-                    <img src="1-2yrkid.jpg" class="card-img-top" alt="..." style="height:350px">
-                    <div class="card-body mx-auto text-center">
-                        <h5 class="card-title">1-2yr Kids</h5>
-                        <a href="#" class="btn btn-primary">explore</a>
-                    </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="1-2yrkid.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>1-2 Years</h5>
+                    <button class="btn btn-primary">Explore</button>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card" style="width: 22rem;">
-                    <img src="3-5yr kid.jpg" class="card-img-top" alt="..." style="height:350px">
-                    <div class="card-body mx-auto text-center">
-                        <h5 class="card-title">3-5yr Kids</h5>
-                        <a href="#" class="btn btn-primary">explore</a>
-                    </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="3-5yr kid.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>3-5 Years</h5>
+                    <button class="btn btn-primary">Explore</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
 
-    <!-- acceries -->
-    <div class="container border border-2 shadow mt-4" id="Accesseries" style="background-color:#cac4c6;">
-        <h3 class=" text-center mt-3 mb-3" style="background-color: #f8d7da;"><strong>ACCESSERIES</strong></h3>
-        
+<!-- ACCESSORIES -->
+<div class="container mt-4 p-4" id="Accessories">
+    <h3 class="text-center">ACCESSORIES</h3>
 
     <div class="row justify-content-center">
         <div class="col-6 col-md-2 accessory-item">
-            <div class="accessory-img-wrapper">
-                <img src="hair.png" alt="Bows & Clips">
-            </div>
-            <p class="accessory-title">hair accesseries</p>
+            <div class="accessory-img-wrapper"><img src="hair.png"></div>
+            <p class="accessory-title">Hair</p>
         </div>
 
         <div class="col-6 col-md-2 accessory-item">
-            <div class="accessory-img-wrapper">
-                <img src="hats and bags.png" alt="chappals& hat">
-            </div>
+            <div class="accessory-img-wrapper"><img src="hats and bags.png"></div>
             <p class="accessory-title">Hats & Bags</p>
         </div>
 
         <div class="col-6 col-md-2 accessory-item">
-            <div class="accessory-img-wrapper">
-                <img src="sun.png" alt="Sunglasses">
-            </div>
+            <div class="accessory-img-wrapper"><img src="sun.png"></div>
             <p class="accessory-title">Sunglasses</p>
         </div>
-
-        <div class="col-6 col-md-2 accessory-item">
-            <div class="accessory-img-wrapper">
-                <img src="cartoon.png" alt="Jewelry">
-            </div>
-            <p class="accessory-title">Jwellery</p>
-        </div>
-        <div class="col-6 col-md-2 accessory-item">
-            <div class="accessory-img-wrapper">
-                <img src="shoes and socks.png" alt="Jewelry">
-            </div>
-            <p class="accessory-title">Shoes & Socks</p>
-        </div>
-        
-   
-        
-
-    <div class="text-center">
-        <h2 class="section-footer-title">Our Bestsellers</h2>
-        <div style="width: 50px; height: 3px; background-color: #f1bed8; margin: 0 auto;"></div>
     </div>
 </div>
-<!-- size chart -->
- <div class="container border border-2 shadow mt-4" id="Size Chart" style="background-color:#cac4c6;">
-        <h3 class=" text-center mt-3 mb-3" style="background-color: #f8d7da;"><strong>SIZE CHART</strong></h3>
-    <div class="p-4">
-        <p class="text-center text-muted">Newborn to 5 Years</p>
-        <div class="table-responsive">
-            <table class="table table-hover text-center align-middle">
-                <thead style="background-color: #cfc5c5; color: #57253a;">
-                    <tr>
-                        <th class="p-3">AGE</th>
-                        <th class="p-3">SIZE</th>
-                        <th class="p-3">HEIGHT (CM)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0 - 3 Months</td>
-                        <td><strong>NB</strong></td>
-                        <td>50 - 56</td>
-                    </tr>
-                    <tr>
-                        <td>3 - 6 Months</td>
-                        <td><strong>S</strong></td>
-                        <td>56 - 62</td>
-                    </tr>
-                    <tr>
-                        <td>6 - 12 Months</td>
-                        <td><strong>M</strong></td>
-                        <td>62 - 74</td>
-                    </tr>
-                    <tr>
-                        <td>1 - 2 Years</td>
-                        <td><strong>L</strong></td>
-                        <td>74 - 86</td>
-                    </tr>
-                    <tr>
-                        <td>2 - 3 Years</td>
-                        <td><strong>XL</strong></td>
-                        <td>86 - 98</td>
-                    </tr>
-                    <tr>
-                        <td>3 - 4 Years</td>
-                        <td><strong>2XL</strong></td>
-                        <td>98 - 104</td>
-                    </tr>
-                    <tr>
-                        <td>4 - 5 Years</td>
-                        <td><strong>3XL</strong></td>
-                        <td>104 - 110</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="alert alert-light border-0 text-center mt-2" role="alert">
-            <i class="bi bi-heart-fill" style="color: #ff66b2;"></i> 
-            <strong>TIP:</strong> If unsure, choose one size bigger.
-        </div>
-    </div>
+
+<!-- SIZE -->
+<div class="container mt-4 p-4" id="Size">
+    <h3 class="text-center">SIZE CHART</h3>
+
+    <table class="table text-center">
+        <tr><th>Age</th><th>Size</th><th>Height</th></tr>
+        <tr><td>0-3M</td><td>NB</td><td>50-56</td></tr>
+        <tr><td>1-2Y</td><td>L</td><td>74-86</td></tr>
+        <tr><td>3-5Y</td><td>XL</td><td>86-110</td></tr>
+    </table>
 </div>
-<!-- mail links -->
-<div class="container mt-5 mb-5 text-center">
-    <div class="p-4 rounded-3 shadow-sm" style="background-color: #ffffff; border: 1px solid #f1bed8;">
-        
-        <h4 class="fw-bold mb-3" style="color: #ff66b2;">Get in Touch</h4>
-        
-        <div class="d-flex justify-content-center gap-4 flex-wrap">
-            <a href="mailto:hello@kidscare.com" class="text-decoration-none text-dark fs-5">
-                <i class="bi bi-envelope-heart-fill me-2" style="color: #3366cc;"></i>
-                hello@kidscare.com
-            </a>
 
-            <a href="https://wa.me/1234567890" target="_blank" class="text-decoration-none text-dark fs-5">
-                <i class="bi bi-whatsapp me-2" style="color: #25D366;"></i>
-                Chat with Us
-            </a>
-        </div>
-
-        <hr class="my-4" style="color: #f1bed8; opacity: 0.5;">
-
-        <h2 class="section-footer-title mt-0">Thank You for Visiting!</h2>
-        <p class="text-muted">We are happy to be part of your little one's journey.</p>
-        <i class="bi bi-heart-fill" style="color: #ff66b2; font-size: 1.5rem;"></i>
-    </div>
+<!-- FOOTER -->
+<div class="container mt-4 text-center p-4">
+    <h4>Get in Touch</h4>
+    <p>hello@kidscare.com</p>
+    <h2 class="section-footer-title">Thank You 💖</h2>
 </div>
+
 </body>
-
 </html>
